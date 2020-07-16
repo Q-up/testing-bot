@@ -11,13 +11,11 @@ bot.on("message", (message) => {
   if (message.content.includes("hello")) {
     message.reply(`Hello I am ${bot.user.tag}!\n`);
     message.channel.send("How can I help you?");
-  }
-});
-
-bot.on("message", (message) => {
-  if (message.content.includes("jasmine")) {
+  } else if (message.content.includes("jasmine")) {
     message.reply(`Yes! Let's talk about Jasmine testing!`);
   }
 });
+
+bot.on("message", (message) => {});
 
 bot.login(TOKEN);
