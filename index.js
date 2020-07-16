@@ -14,4 +14,10 @@ bot.on("message", (message) => {
   }
 });
 
+bot.on("message", (message) => {
+  if (message.content.includes("jasmine")) {
+    message.reply(`Yes! Let's talk about Jasmine testing!`);
+  }
+});
+
 bot.login(TOKEN);
