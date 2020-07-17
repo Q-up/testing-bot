@@ -27,7 +27,7 @@ bot.on('message', (message) => {
     message.channel.send('How\'s your attention span? Do you prefer: \n short vid: less than 10mins \n long reel: more than 20 mins \n or moderate: more than 10mins, less than 20 though');
   } else if (msg === 'short') {
     message.channel.send('You must like spongebob lol. !shade, check this out: https://www.youtube.com/watch?v=dFz2h7o0vqs&t=0s');
-  } else if (msg.includes('moderate')) {
+  } else if (msg === 'moderate') {
     message.channel.send('This is what I found: https://www.youtube.com/watch?v=rw4KlxKEENQ');
   } else if (msg === 'long') {
     message.channel.send('Oh, so you want a movie? This one had the highest ratings, grab some popcorn: https://www.youtube.com/watch?v=r9HdJ8P6GQI');
