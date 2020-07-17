@@ -23,31 +23,50 @@ bot.on('message', (message) => {
   else if (msg.includes('javascript')) {
     message.channel.send('iJS (im just sayin) this might help: https://bit.ly/398eWFE');
     message.reply('Does that help?');
-  } else if (msg === 'JS') {
-    message.channel.send('How\'s your attention span? Do you prefer: \n short videos: less than 10mins \n long videos: more than 20 mins \n or in between: more than 10mins, less than 20 though');
+  }else if (msg === 'js') {
+    message.channel.send('How\'s your attention span? Do you prefer: \n short vid: less than 10mins \n long reel: more than 20 mins \n or moderate: more than 10mins, less than 20 though');
+  } else if (msg === 'short') {
+    message.channel.send('You must like spongebob lol. !shade, check this out: https://www.youtube.com/watch?v=dFz2h7o0vqs&t=0s');
+  } else if (msg.includes('moderate')) {
+    message.channel.send('This is what I found: https://www.youtube.com/watch?v=rw4KlxKEENQ');
+  } else if (msg === 'long') {
+    message.channel.send('Oh, so you want a movie? This one had the highest ratings, grab some popcorn: https://www.youtube.com/watch?v=r9HdJ8P6GQI');
   }
 
   // python keyword
   else if (msg.includes('python')) {
     message.channel.send('I love py! Thisss might help: https://bit.ly/3fFd4Xd');
     message.reply('Does that help?');
+  } else if (msg === 'py') {
+    message.channel.send('How\'s your appetite? Do you prefer: \n small py: less than 10mins \n big py: more than 20 mins \n or medium py: more than 10mins, less than 20 though');
   }
 
   // ruby keyword
   else if (msg.includes('ruby')) {
     message.channel.send('Check you out! Okay, here\'s a gem for you: https://bit.ly/3h8FaKG');
     message.reply('Does that help?');
-  } else if (msg.includes('yes')) {
+  } else if (msg === 'ror') {
+    message.channel.send('How do you like your gems? Do you prefer: \n soft cut: less than 10mins \n rough cut: more than 20 mins \n or in between: more than 10mins, less than 20 though');
+  }
+
+  // yes no prompts
+  else if (msg.includes('yes')) {
     message.channel.send('Dooope! I\'m out then');
   } else if (msg.includes('no')) {
     message.channel.send('Oh snap! Okay, what else do you need?');
-  } else if (msg.includes('react')) {
+  }
+
+  // react keyword
+  else if (msg.includes('react')) {
     message.channel.send('Oof! I remember those days. This helped me: https://bit.ly/2DHBX6r');
     message.reply('How\'s that?');
-  } else if (msg.includes('videos')) {
+  }
+
+  // videos keyword
+  else if (msg.includes('videos')) {
     message.channel.send('Oh! You don\'t like reading either! Remind me which language again: JS, Py, RoR ?');
-    // message.reply('How\'s that?');
-  } 
+  }
+
 });
 
 bot.login(TOKEN);
