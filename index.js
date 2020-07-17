@@ -39,6 +39,12 @@ bot.on('message', (message) => {
     message.reply('Does that help?');
   } else if (msg === 'py') {
     message.channel.send('How\'s your appetite? Do you prefer: \n small py: less than 10mins \n big py: more than 20 mins \n or medium py: more than 10mins, less than 20 though');
+  } else if (msg === 'small') {
+    message.channel.send('I didn\'t find that specific flavor, but this one might help: \n https://www.youtube.com/watch?v=1Lfv5tUGsn8&t=0s');
+  } else if (msg === 'big') {
+    message.channel.send('I didn\'t find that specific flavor, but this is one a tasty pie: \n https://www.youtube.com/watch?v=6tNS--WetLI');
+  } else if (msg === 'medium') {
+    message.channel.send('I didn\'t find that specific flavor, but this is a good snack: \n https://www.youtube.com/watch?v=_0soBPejyu4');
   }
 
   // ruby keyword
