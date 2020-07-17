@@ -1,16 +1,21 @@
-require('dotenv').config();
-const Discord = require('discord.js');
+require("dotenv").config();
+const Discord = require("discord.js");
 const bot = new Discord.Client();
 const TOKEN = process.env.BOT_TOKEN;
 
-bot.once('ready', () => {
+bot.once("ready", () => {
   console.log(`Hello, I am ${bot.user.tag}!`);
 });
 
-bot.on('message', (message) => {
-  if (message.content.includes('hello')) {
+bot.on("message", (message) => {
+  if (message.content.includes("hello")) {
     message.reply(`Hello I am ${bot.user.tag}!\n`);
-    message.channel.send('How can I help you?');
+    message.channel.send("How can I help you?");
+  } else if (message.content.includes("jasmine")) {
+    message.channel.send(`Yes! Let's talk about Jasmine testing!\n`);
+    message.channel.send(
+      `To see Jasmine's official documentation follow this link: https://jasmine.github.io/`
+    );
   }
 });
 
