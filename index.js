@@ -12,7 +12,10 @@ bot.on("message", (message) => {
     message.reply(`Hello I am ${bot.user.tag}!\n`);
     message.channel.send("How can I help you?");
   } else if (message.content.includes("jasmine")) {
-    message.channel.send(`Yes! Let's talk about Jasmine testing!`);
+    message.channel.send(`Yes! Let's talk about Jasmine testing!\n`);
+    message.channel.send(
+      `To see Jasmine's official documentation follow this link: https://jasmine.github.io/`
+    );
   }
 });
 
