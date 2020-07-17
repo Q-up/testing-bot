@@ -7,19 +7,6 @@ bot.once('ready', () => {
   console.log(`Hello, I am ${bot.user.tag}!`);
 });
 
-<<<<<<< HEAD
-bot.on("message", (message) => {
-  if (message.content.includes("hello")) {
-    message.reply(`Hello I am ${bot.user.tag}!\n`);
-    message.channel.send("How can I help you?");
-  } else if (message.content.includes("jasmine")) {
-    message.reply(`Yes! Let's talk about Jasmine testing!\n`);
-    message.channel.send(
-      "To see the official documentation follow this link: https://jasmine.github.io/"
-    );
-  } else {
-    message.channel.send(`Is there anything else I can help you with today?`);
-=======
 bot.on('message', (message) => {
   const msg = message.content.toLowerCase();
 
@@ -37,7 +24,6 @@ bot.on('message', (message) => {
   } else if (msg === 'ruby') {
     message.channel.send('You said ruby? Okay, here\'s a gem for you: https://bit.ly/3h8FaKG');
     message.reply('Does that help?');
->>>>>>> a26d657c35577d5710956cd121dd470800c59981
   }
 });
 

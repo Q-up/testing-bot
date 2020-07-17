@@ -1,3 +1,7 @@
-#### Testing bot
+## The Testing Expert Discord Chat Bot
 
-Writing good quality unit tests for your project just got easier! Testing bot is an interactive Discord chat bot designed to help you begin your journey to learning how to write unit tests. Testing bot will help guide you into the right resources you need to develop the industries highly coveted skills in test-driven development.
+ Jazmaine is her name and she is your sassy solution to finding the right answers to your questions about any unit testing framework in any programming language. Let Jazmaine of Discord guide you into the right resources you need to develop the industries highly coveted skills in test-driven development. She also has dad jokes... consider yourself warned. 
+
+
+
+
